@@ -3,8 +3,6 @@ GlassRoll
 
 Roll dice through Glass!
 
-Forked from JZPlusPlus.
-
 Either compile the source or grab the APK [here](https://github.com/Ambergleam/GlassRoll/raw/master/bin/GlassRoll.apk) and install it using ADB.
 
 Then just say "ok glass, roll a die" then followed by "d6" or "d20" or any "d-number" to have it generate a random number between 1 and your die value.
