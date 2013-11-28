@@ -4,8 +4,6 @@
 /home/ambergleam/git/Glass/GlassRoll/res/values/dimens.xml \
 /home/ambergleam/git/Glass/GlassRoll/res/values/styles.xml \
 /home/ambergleam/git/Glass/GlassRoll/res/drawable/ic_launcher.png \
-/home/ambergleam/git/Glass/GlassRoll/res/drawable/download.png \
 /home/ambergleam/git/Glass/GlassRoll/res/xml/voice_trigger.xml \
 /home/ambergleam/git/Glass/GlassRoll/bin/res/drawable/ic_launcher.png \
-/home/ambergleam/git/Glass/GlassRoll/bin/res/drawable/download.png \
 /home/ambergleam/git/Glass/GlassRoll/bin/AndroidManifest.xml \
