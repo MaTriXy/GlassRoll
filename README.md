@@ -3,7 +3,7 @@ GlassRoll
 
 Roll dice through Glass!
 
-Forked from JZPlusPlus.
+Forked from [JZPlusPlus](https://github.com/jzplusplus).
 
 Either compile the source or grab the APK [here](https://github.com/Ambergleam/GlassRoll/raw/master/bin/GlassRoll.apk) and install it using ADB.
 
