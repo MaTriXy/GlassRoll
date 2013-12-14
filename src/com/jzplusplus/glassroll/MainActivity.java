@@ -1,18 +1,16 @@
 package com.jzplusplus.glassroll;
 
-import java.text.NumberFormat;
-import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.Random;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.graphics.Color;
-import android.speech.RecognizerIntent;
 import android.view.KeyEvent;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
+	
+	//private static String TAG = "GlassRoll";
 	
 	// The die value construed as user voice input
 	private int dieValue;
@@ -21,28 +19,24 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//Get which voice trigger launched the app
+		String className = getComponentName().getClassName();
+		String number = className.substring(className.lastIndexOf(".")+1);
+		try
+		{
+			dieValue = Integer.parseInt(number);
+		}
+		catch(NumberFormatException nfe)
+		{
+			dieValue = 20;
+		}
+		
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
-
-		// Get the user voice input
-		Bundle b = getIntent().getExtras();
-		if (b != null) {
-			ArrayList<String> voiceResults = getIntent().getExtras().getStringArrayList(RecognizerIntent.EXTRA_RESULTS);
-			// Parse it into a number
-			NumberFormat nf = NumberFormat.getIntegerInstance();
-			nf.setParseIntegerOnly(true);
-			try {
-				// Convert to a number
-				String voiceResultsString = voiceResults.get(0).substring(1);
-				dieValue = nf.parse(voiceResultsString).intValue();
-			} catch (ParseException e) {
-				// Didn't properly convert so exit out
-				finish();
-			}
-		}
 		rollIt();
 	}
 

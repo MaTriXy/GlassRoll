@@ -19,12 +19,42 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter>
-	            <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
-	        </intent-filter>
-	        <meta-data android:name="com.google.android.glass.VoiceTrigger"
-	                   android:resource="@xml/voice_trigger" />
         </activity>
+        
+        <activity-alias android:label="d four" android:name="4" android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger" android:resource="@xml/voice_trigger" />
+        </activity-alias>
+        
+        <activity-alias android:label="d six" android:name="6" android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger" android:resource="@xml/voice_trigger" />
+        </activity-alias>
+        
+        <activity-alias android:label="d eight" android:name="8" android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger" android:resource="@xml/voice_trigger" />
+        </activity-alias>
+        
+        <activity-alias android:label="d ten" android:name="10" android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger" android:resource="@xml/voice_trigger" />
+        </activity-alias>
+        
+        <activity-alias android:label="d twenty" android:name="20" android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger" android:resource="@xml/voice_trigger" />
+        </activity-alias>
     </application>
 
 </manifest>
